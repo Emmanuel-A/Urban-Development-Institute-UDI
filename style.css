@@ -1,0 +1,682 @@
+/*
+Theme Name: Urban Development Institute (UDI)
+Description: A theme built for Career Colleges Ontario
+Author:      Hill+Knowlton Strategies
+Author URI:  http://hkstrategies.ca
+*/
+
+
+/* =============================================================================
+   WordPress Generated Classes
+   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+}
+
+.row {
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.bold_text, h1, h2, h3, h4 {
+	font-weight: bold;
+}
+
+.blue_text {
+	color: #5388b4;
+}
+
+.orange_text {
+	color: #d35724;
+}
+
+a.btn {
+	padding: 20px;
+	border-radius: 0;
+	text-decoration: none;
+}
+
+.display_table_cell {
+	display: table_cell;
+	vertical-align: middle;
+}
+
+.hero {
+	color: #ffffff;
+	background: url(images/desktop/hero_bg_image.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+}
+
+/*.hero .hero_content {
+	width: 555px;
+}*/
+
+.hero h1 {
+	font-size: 2.4em;
+	margin: 80px 0 0 0;
+}
+
+.hero p {
+	font-size: 1.2em;
+	font-weight: 200;
+	padding: 20px 0 ;
+	margin: 0;
+}
+
+.hero .orange_btn {
+	background-color: #d35724;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.1em;
+	color: #ffffff;
+	width: 185px;
+	margin: 0 10px 0 0;
+}
+
+.hero .blue_btn {
+	background-color: #418ab8;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.1em;
+	color: #ffffff;
+	width: 185px;
+}
+
+.hero .down_arrow {
+	margin: 1rem 0;
+}
+
+.language_switch {
+	width: 100%;
+	height: 20px;
+}
+
+.language_switch a {
+	margin: 45px 0 0 0;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 200;
+	text-decoration: none;
+}
+
+.canadian_education {
+	background-color: #ebebeb;
+	padding: 0 0 106px 0;
+}
+
+.canadian_education svg {
+	font-family: Lato;
+	font-weight: 700;
+}
+
+.canadian_education h2 {
+	text-align: center;
+	padding: 90px 0 0 0;
+	font-size: 2em;
+}
+.canadian_education h3 {
+	font-size: 1.3em;
+}
+
+.canadian_education p.canadian_education_text {
+	text-align: center;
+	width: 575px;
+	margin: 0 auto;
+	padding: 0 0 85px 0;
+}
+
+.canadian_education p.you_can_study_here {
+	padding: 0 0 55px 0;
+}
+
+.canadian_education p.you_can_study_here, .canadian_education p.bridge_training_gap {
+	font-size: 0.7em;
+}
+
+.canadian_education svg {
+	width: 60%;
+	margin: 0 auto;
+	display: block;
+}
+
+.did_you_know {
+	background-color: #333333;
+	color: #ffffff;
+	font-size: 0.9em;
+	font-weight: 200;
+	padding: 70px 0;
+}
+
+.did_you_know h4 {
+	text-align: center;
+	margin: 0 0 40px 0;
+    font-size: 1.7em;
+}
+
+.did_you_know p.sixty_nine_percent {
+	margin: 55px 0 0 0;
+}
+
+.contact_your_mpp {
+	padding: 80px 0;
+	/*height: 500px;*/
+	width: 100%;
+	background-color: #202546;
+	color: #ffffff;
+}
+
+.contact_your_mpp p {
+	font-size: 0.9em;
+	font-weight: 300;
+	line-height: 1.5em;
+	margin: 30px 0 0 0;
+}
+
+.contact_your_mpp form label {
+	font-size: 0.8em;
+}
+
+.contact_your_mpp form label span a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.contact_your_mpp form button {
+	border-radius: 0;
+	color: #ffffff;
+	text-transform: uppercase;
+	background-color: #d15721;
+}
+
+.contact_your_mpp form label input {
+	margin: 0 10px 0 0;
+}
+
+.contact_your_mpp form input.form-control {
+	border-radius: 0;
+}
+
+.our_students_are_different {
+	/*height: 440px;*/
+	width: 100%;
+    padding: 100px 0;
+    background: url(images/different_students_background.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right 0 center;
+    background-color: #3186bd;
+    color: #ffffff;
+}
+
+.our_students_are_different p {
+	font-size: 0.9em;
+	font-weight: 300;
+	line-height: 1.5em;
+}
+
+.sign_up  {
+	/*height: 440px;*/
+	width: 100%;
+	padding: 100px 0;
+	background: url(images/signup_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+	background-color: #1f2440;
+	color: #ffffff;
+	overflow: hidden;
+}
+
+.sign_up p {
+	font-size: 1.2em;
+	font-weight: 300;
+	line-height: 1.5em;
+	margin: 0 0 40px 0;
+}
+
+.sign_up .orange_btn {
+	background-color: #d35724;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #ffffff;
+	margin: 0 10px 0 0;
+}
+
+footer.footer {
+	padding: 80px 0;
+}
+
+footer.footer img {
+	margin: 27px 0 0 0;
+}
+
+footer.footer p {
+	font-size: 0.7em;
+	margin: 0;
+	padding: 0;
+}
+
+footer.footer ul li {
+	list-style: none;
+	display: inline-block;
+	margin: 56px 20px 0 20px;
+}
+
+footer.footer ul li a {
+	font-size: 0.7em;
+	text-decoration: none;
+	color: #000000;
+	margin: 10px 0 0 0;
+}
+
+footer a {
+    color: inherit;
+    font-size: 0.7em;
+    margin: 0 10px 0 0;
+    text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+@media only screen and (min-width: 1290px) and (max-width: 2000px) {
+	.hero h1 {
+	    font-size: 2.61em;
+	    margin: 0;
+	}
+	.our_students_are_different {
+		background-size: cover;
+	}
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1289px) {
+	.hero h1 {
+	    font-size: 2em;
+    	margin: 15% 0 0 0;
+	}
+	.hero p {
+	    font-size: 1em;
+	}
+	.our_students_are_different {
+		background-size: cover;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+	.canadian_education img {
+		width: 80%;
+	}
+	.did_you_know p.sixty_nine_percent {
+	    margin: 8% 0 0 0;
+	}
+	.did_you_know p.fifty_two_percent {
+	    margin: 0;
+	}
+	.did_you_know .col-md-5:nth-child(1) {
+	    margin-bottom: 40px;
+	}
+	.did_you_know .offset-md-1 {
+		margin-left: 0;
+	}
+	.did_you_know .col-md-5 {
+	    -webkit-box-flex: 50%;
+	    -ms-flex: 50%;
+	    flex: 50%;
+	    max-width: 50%;
+	}
+	.sign_up .orange_btn {
+		font-size: 0.6em;
+		width: auto;
+	}
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1000px) {
+	.hero h1 {
+	    font-size: 2em;
+	}
+	.our_students_are_different {
+		background-size: cover;
+	}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+	.hero h1 {
+	    font-size: 1.6em;
+	    margin: 90px 0 0 0;
+	}
+	.hero p {
+	    font-size: 0.8em;
+	}
+	.canadian_education img {
+		width: 100%;
+	}
+	.our_students_are_different {
+		background-size: cover;
+	}
+	.did_you_know .col-md-5 {
+	    -webkit-box-flex: 100%;
+	    -ms-flex: 100%;
+	    flex: 100%;
+	    max-width: 100%;
+	}
+	.did_you_know .offset-md-1 {
+		margin-left: 15%;
+	}
+	.sign_up .orange_btn {
+	    font-size: 0.5em;
+	    padding: 15px;
+	    width: auto;
+	}
+	footer.footer ul li {
+		margin-right: 0px;
+	}
+}
+
+@media only screen and (min-width: 578px) and (max-width: 768px) {
+	.hero h1 {
+    	font-size: 1.5em;
+    	margin: 80px 0 0 0;
+	}
+	.hero p {
+		font-size: 0.8em;
+	}
+	.canadian_education h2 {
+		font-size: 1.5em;
+	}
+	.canadian_education p.canadian_education_text {
+		width: 100%;
+	    font-size: 0.8em;
+	    padding: 0 0 25px 0;
+	}
+	.canadian_education h3 {
+		font-size: 1.3em;
+    	text-align: center;
+	}
+	.canadian_education img {
+		width: 70%;
+		margin: 0 auto;
+		display: block;
+	}
+	.canadian_education p.you_can_study_here {
+	    padding: 0 0 25px 0;
+	}
+	.canadian_education p.you_can_study_here, .canadian_education p.bridge_training_gap {
+	    font-size: 0.8em;
+	    text-align: center;
+	}
+	.did_you_know .col-md-5:nth-child(1) {
+	    margin-bottom: 50px;
+	}
+	.did_you_know img {
+		width: 30%;
+	    float: none !important;
+	    margin: 0 auto;
+	    display: block;
+	}
+	.did_you_know p {
+	    float: none !important;
+	    text-align: center;
+	    margin: 30px 0;
+	}
+	.contact_your_mpp h2 {
+		text-align: center;
+	}
+	.contact_your_mpp p {
+		font-size: 0.9em;
+		text-align: center;
+	}
+	.our_students_are_different {
+		background-size: cover;
+	}
+	.our_students_are_different p {
+		font-size: 0.9em;
+		text-align: center;
+	}
+	.sign_up p {
+    	font-size: 1em;
+    	text-align: center;
+	}
+	.sign_up a.btn {
+		font-size: 0.6em;
+    	margin: 20px auto;
+    	display: block;
+	}
+	footer.footer img {
+		margin: 0 auto;
+		display: block;
+	}
+	footer.footer p {
+    	font-size: 0.7em;
+    	margin: 30px 0;
+    	text-align: center;
+	}
+	footer.footer ul {
+		text-align: center;
+	}
+	footer.footer ul li {
+		width: 20%;
+		margin: 5px 0px 0 20px;;
+	}
+	footer.footer ul li a {
+		font-size: 0.8em;
+	}
+}
+
+@media only screen and (min-width: 505px) and (max-width: 577px) {
+	.hero h1 {
+    	font-size: 1.7em;
+    	margin: 80px 0 0 0;
+	}
+	.hero p {
+		font-size: 0.8em;
+	}
+	.hero a.btn {
+		display: inline;
+		font-size: 0.6em;
+	}
+	.canadian_education h2 {
+		font-size: 1.5em;
+	}
+	.canadian_education p.canadian_education_text {
+		width: 100%;
+	    font-size: 0.8em;
+	}
+	.canadian_education h3 {
+		font-size: 1.3em;
+    	text-align: center;
+	}
+	.canadian_education p.canadian_education_text {
+		padding: 0 0 25px 0;
+	}
+	.canadian_education p.you_can_study_here, .canadian_education p.bridge_training_gap {
+	    font-size: 0.8em;
+	    text-align: center;
+	}
+	.did_you_know .col-md-5:nth-child(1) {
+	    margin-bottom: 70px;
+	}
+	/*.did_you_know .col-md-5.offset-md-1 {
+		margin: 30px 0 70px 0;
+	}*/
+	.did_you_know img {
+		width: 50%;
+	    float: none !important;
+	    margin: 0 auto;
+	    display: block;
+	}
+	.did_you_know p {
+	    float: none !important;
+	    text-align: center;
+	    margin: 30px 0;
+	}
+	.contact_your_mpp h2 {
+		text-align: center;
+	}
+	.contact_your_mpp p {
+		font-size: 0.9em;
+		text-align: center;
+	}
+	.our_students_are_different {
+		background-size: cover;
+	}
+	.our_students_are_different p {
+		font-size: 0.9em;
+		text-align: center;
+	}
+	.sign_up p {
+    	font-size: 1em;
+    	text-align: center;
+	}
+	.sign_up a.btn {
+		font-size: 0.6em;
+    	margin: 20px auto;
+    	display: block;
+	}
+	footer.footer img {
+		margin: 0 auto;
+		display: block;
+	}
+	footer.footer p {
+    	font-size: 0.7em;
+    	margin: 30px 0;
+    	text-align: center;
+	}
+	footer.footer ul {
+		text-align: center;
+	}
+	footer.footer ul li {
+		width: 20%;
+		margin: 0;
+	}
+	footer.footer ul li a {
+		font-size: 0.8em;
+	}
+}
+
+@media only screen and (min-width: 300px) and (max-width: 504px) {
+	.hero {
+	    background: url(images/mobile/hero_background_mobile.jpg);
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: 100%;
+	}
+	.hero h1 {
+    	font-size: 1.2em;
+    	margin: 80px 0 0 0;
+	}
+	.hero p {
+		font-size: 0.7em;
+		margin: 0 0 15px 0;
+	}
+	.hero a.btn {
+		display: inline;
+		font-size: 0.6em;
+	}
+	.down_arrow {
+		margin: 120px 0 0 0;
+	}
+	.canadian_education h2 {
+		font-size: 1.5em;
+	}
+	.canadian_education p.canadian_education_text {
+		width: 100%;
+	    font-size: 0.8em;
+	}
+	.canadian_education h3 {
+		font-size: 1.3em;
+    	text-align: center;
+	}
+	.canadian_education p.canadian_education_text {
+		padding: 0 0 25px 0;
+	}
+	.canadian_education p.you_can_study_here, .canadian_education p.bridge_training_gap {
+	    font-size: 0.7em;
+	    text-align: center;
+	}
+	.did_you_know .col-md-5:nth-child(1) {
+	    margin: 0 0 70px 0;
+	}
+	.did_you_know img {
+		width: 50%;
+	    float: none !important;
+	    margin: 0 auto;
+	    display: block;
+	}
+	.did_you_know p {
+	    float: none !important;
+	    text-align: center;
+	    margin: 30px 0;
+	}
+	.contact_your_mpp h2 {
+		text-align: center;
+	}
+	.contact_your_mpp p {
+		font-size: 0.7em;
+		text-align: center;
+	}
+	.our_students_are_different {
+		background-size: cover;
+	}
+	.our_students_are_different p {
+		font-size: 0.7em;
+		text-align: center;
+	}
+	.sign_up p {
+    	font-size: 1em;
+    	text-align: center;
+	}
+	.sign_up a.btn {
+		font-size: 0.6em;
+    	margin: 20px auto;
+    	display: block;
+	}
+	footer.footer img {
+		margin: 0 auto;
+		display: block;
+	}
+	footer.footer p {
+    	font-size: 0.5em;
+    	margin: 30px 0;
+    	text-align: center;
+	}
+	footer.footer ul {
+		text-align: center;
+	}
+	footer.footer ul li {
+		width: 20%;
+		margin: 0;
+	}
+}
+
+@media (max-width: 577px) {
+	.order-sm-first {
+	    -webkit-box-ordinal-group: 0;
+	    -ms-flex-order: -1;
+	    order: -1;
+	}
+	.canadian_education img {
+    	width: 100%;
+	}
+	.canadian_education p.canadian_education_text {
+		padding: 0 0 25px 0;
+	}
+	.back_top_top.back_top_top {
+	    position: absolute;
+	    right: 60px;
+	    width: 40px;
+	}
+}
+
+
