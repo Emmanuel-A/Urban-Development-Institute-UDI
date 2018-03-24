@@ -1,8 +1,8 @@
 /*
-Theme Name: Urban Development Institute (UDI)
-Description: A theme built for Career Colleges Ontario
-Author:      Hill+Knowlton Strategies
-Author URI:  http://hkstrategies.ca
+Theme Name:    CCO
+Description:   A theme built for Career Colleges Ontario
+Author:        Hill+Knowlton Strategies
+Author URI:    http://hkstrategies.ca
 */
 
 
@@ -101,7 +101,7 @@ a.btn {
 .language_switch a {
 	margin: 45px 0 0 0;
 	color: #ffffff;
-	font-size: 14px;
+	font-size: 20px;
 	font-weight: 200;
 	text-decoration: none;
 }
