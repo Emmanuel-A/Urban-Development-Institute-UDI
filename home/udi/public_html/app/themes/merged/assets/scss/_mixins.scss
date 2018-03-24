@@ -1,0 +1,312 @@
+
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+// IE7 inline-block hack
+@mixin inline-block() {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+// Clearfix
+@mixin clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    // Fixes Opera/contenteditable bug:
+    // http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Placeholder text
+@mixin placeholder($color: $placeholderText) {
+  &:-moz-placeholder {
+    color: $color;
+  }
+  &::-moz-placeholder {
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+}
+
+// Border Image
+@mixin border-image($image) {
+  -webkit-border-image: $image;
+       -o-border-image: $image;
+          border-image: $image;
+}
+
+// Border Radius
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+          border-radius: $radius;
+}
+
+// Drop shadows
+@mixin box-shadow($shadow) {
+  -webkit-box-shadow: $shadow;
+     -moz-box-shadow: $shadow;
+          box-shadow: $shadow;
+}
+
+// Tab focus
+@mixin tab-focus() {
+  // WebKit-specific. Other browsers will keep their default outline style.
+  // (Initially tried to also force default via `outline: initial`,
+  // but that seems to erroneously remove the outline in Firefox altogether.)
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+// Transitions
+@mixin transition($transition...) {
+  -webkit-transition: $transition;
+       -o-transition: $transition;
+          transition: $transition;
+}
+
+@mixin transition-property($transition-property...) {
+  -webkit-transition-property: $transition-property;
+          transition-property: $transition-property;
+}
+
+@mixin transition-delay($transition-delay) {
+  -webkit-transition-delay: $transition-delay;
+          transition-delay: $transition-delay;
+}
+
+@mixin transition-duration($transition-duration...) {
+  -webkit-transition-duration: $transition-duration;
+          transition-duration: $transition-duration;
+}
+
+@mixin transition-timing-function($timing-function) {
+  -webkit-transition-timing-function: $timing-function;
+          transition-timing-function: $timing-function;
+}
+
+@mixin transition-transform($transition...) {
+  -webkit-transition: -webkit-transform $transition;
+     -moz-transition: -moz-transform $transition;
+       -o-transition: -o-transform $transition;
+          transition: transform $transition;
+}
+
+// Transformations
+@mixin transform($tranformation...) {
+  -webkit-transform: $tranformation;
+     -moz-transform: $tranformation;
+      -ms-transform: $tranformation;
+       -o-transform: $tranformation;
+          transform: $tranformation;
+}
+
+@mixin rotate($degrees) {
+  -webkit-transform: rotate($degrees);
+     -moz-transform: rotate($degrees);
+      -ms-transform: rotate($degrees);
+       -o-transform: rotate($degrees);
+          transform: rotate($degrees);
+}
+
+@mixin scale($ratio) {
+  -webkit-transform: scale($ratio);
+     -moz-transform: scale($ratio);
+      -ms-transform: scale($ratio);
+       -o-transform: scale($ratio);
+          transform: scale($ratio);
+}
+
+@mixin translate($x, $y) {
+  -webkit-transform: translate($x, $y);
+     -moz-transform: translate($x, $y);
+      -ms-transform: translate($x, $y);
+       -o-transform: translate($x, $y);
+          transform: translate($x, $y);
+}
+
+@mixin skew($x, $y) {
+  -webkit-transform: skew($x, $y);
+     -moz-transform: skew($x, $y);
+      -ms-transform: skewX($x) skewY($y); // See https://github.com/twitter/bootstrap/issues/4885
+       -o-transform: skew($x, $y);
+          transform: skew($x, $y);
+  -webkit-backface-visibility: hidden; // See https://github.com/twitter/bootstrap/issues/5319
+}
+
+@mixin translate3d($x, $y, $z) {
+  -webkit-transform: translate3d($x, $y, $z);
+     -moz-transform: translate3d($x, $y, $z);
+       -o-transform: translate3d($x, $y, $z);
+          transform: translate3d($x, $y, $z);
+}
+
+@mixin transform-origin($origin...) {
+  -webkit-transform-origin: $origin;
+     -moz-transform-origin: $origin;
+       -o-transform-origin: $origin;
+          transform-origin: $origin;
+}
+
+// Animations
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @-o-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin animation-name($name...) {
+  -webkit-animation-name: $name;
+     -moz-animation-name: $name;
+       -o-animation-name: $name;
+          animation-name: $name;
+}
+
+@mixin animation-duration($duration...) {
+  -webkit-animation-duration: $duration;
+     -moz-animation-duration: $duration;
+       -o-animation-duration: $duration;
+          animation-duration: $duration;
+}
+
+@mixin animation-timing-function($timing...) {
+  -webkit-animation-timing-function: $timing;
+     -moz-animation-timing-function: $timing;
+       -o-animation-timing-function: $timing;
+          animation-timing-function: $timing;
+}
+
+@mixin animation-iteration-count($count...) {
+  -webkit-animation-iteration-count: $count;
+     -moz-animation-iteration-count: $count;
+       -o-animation-iteration-count: $count;
+          animation-iteration-count: $count;
+}
+
+@mixin animation-direction($direction...) {
+  -webkit-animation-direction: $direction;
+     -moz-animation-direction: $direction;
+       -o-animation-direction: $direction;
+          animation-direction: $direction;
+}
+
+@mixin animation-fill-mode($fill...) {
+  -webkit-animation-fill-mode: $fill;
+     -moz-animation-fill-mode: $fill;
+       -o-animation-fill-mode: $fill;
+          animation-fill-mode: $fill;
+}
+
+@mixin animation-play-state($state...) {
+  -webkit-animation-play-state: $state;
+     -moz-animation-play-state: $state;
+       -o-animation-play-state: $state;
+          animation-play-state: $state;
+}
+
+@mixin animation($animation...) {
+  -webkit-animation: $animation;
+     -moz-animation: $animation;
+       -o-animation: $animation;
+          animation: $animation;
+}
+
+// Backface visibility
+// Prevent browsers from flickering when using CSS 3D transforms.
+// Default value is `visible`, but can be changed to `hidden
+// See git pull https://github.com/dannykeane/bootstrap.git backface-visibility for examples
+@mixin backface-visibility($visibility){
+  -webkit-backface-visibility: $visibility;
+     -moz-backface-visibility: $visibility;
+          backface-visibility: $visibility;
+}
+
+// Background clipping
+// Heads up: FF 3.6 and under need "padding" instead of "padding-box"
+@mixin background-clip($clip) {
+  -webkit-background-clip: $clip;
+     -moz-background-clip: $clip;
+          background-clip: $clip;
+}
+
+// Opacity
+@mixin opacity($opacity) {
+  opacity: $opacity / 100;
+  filter: alpha(opacity=$opacity);
+}
+
+// simple mixin for creating a gradient with 2 stops
+@mixin linear-gradient($from, $to, $start: 0%, $end: 100%) {
+  background-color: $from;
+  background: -moz-linear-gradient(top,  $from $start, $to $end);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop($start, $from), color-stop($end, $to));
+  background: -webkit-linear-gradient(top,  $from $start, $to $end);
+  background: -o-linear-gradient(top,  $from $start, $to $end);
+  background: -ms-linear-gradient(top,  $from $start, $to $end);
+  background: linear-gradient(top bottom,  $from $start, $to $end);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie_hex_str($from)}', endColorstr='#{ie_hex_str($to)}', GradientType=0);
+}
+
+// simple mixin for creating a gradient with 3 stops
+@mixin linear-gradient3($from, $inbetween, $to, $start: 0%, $mid: 50%, $end: 100%) {
+  background-color: $from;
+  background: -moz-linear-gradient(top,  $from $start, $to $end);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop($start, $from), color-stop($inbetween, $mid) color-stop($end, $to));
+  background: -webkit-linear-gradient(top,  $from $start, $inbetween $mid, $to $end);
+  background: -o-linear-gradient(top,  $from $start, $inbetween $mid, $to $end);
+  background: -ms-linear-gradient(top,  $from $start, $inbetween $mid, $to $end);
+  background: linear-gradient(to bottom,  $from $start, $inbetween $mid, $to $end);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie_hex_str($from)}', endColorstr='#{ie_hex_str($to)}', GradientType=0);
+}
+
+// simple mixin for font-face; order of the includes matters, and it is: normal, bold, italic, bold+italic.
+// http://www.fontspring.com/blog/smoother-web-font-rendering-chrome
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: $font-family;
+    src: url('#{$file-path}.eot');
+    src: url('#{$file-path}.eot?#iefix')           format('embedded-opentype'),
+         url('#{$file-path}.woff')                 format('woff'),
+         url('#{$file-path}.ttf')                  format('truetype'),
+         url('#{$file-path}.svg##{$font-family}')  format('svg');
+    font-weight: $weight;
+    font-style: $style;
+  }
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+      font-family: $font-family;
+      src: url('#{$file-path}.svg##{$font-family}') format('svg');
+    }
+  }
+}
